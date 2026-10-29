@@ -1,0 +1,48 @@
+{
+  "build": {
+    "beforeBuildCommand": "",
+    "devUrl": null
+  },
+  "app": {
+    "security": {
+      "capabilities": [
+        "default",
+        {
+          "identifier": "selfhost-media",
+          "description": "Read media from the local ArtCraft storage service",
+          "windows": ["main"],
+          "permissions": [
+            {
+              "identifier": "http:default",
+              "allow": [{ "url": "http://localhost:12346" }]
+            }
+          ]
+        }
+      ],
+      "csp": {
+        "connect-src": [
+          "'self'",
+          "'unsafe-eval'",
+          "'unsafe-inline'",
+          "asset:",
+          "blob:",
+          "data:",
+          "http://ipc.localhost",
+          "http://localhost:12345",
+          "http://localhost:12346",
+          "http://localhost:4310",
+          "https://*.clarity.ms",
+          "https://*.fakeyou.com",
+          "https://*.storyteller.ai",
+          "https://asset.localhost",
+          "https://unpkg.com/detect-gpu@5.0.70/",
+          "https://www.google-analytics.com",
+          "https://www.googletagmanager.com",
+          "ipc://localhost",
+          "tauri://localhost"
+        ],
+        "media-src": ["'self'", "blob:", "data:", "http://localhost:4310", "http://localhost:12346"]
+      }
+    }
+  }
+}

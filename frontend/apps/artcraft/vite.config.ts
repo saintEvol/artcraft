@@ -70,6 +70,12 @@ export default defineConfig({
     topLevelAwait(),
   ],
   server: {
+    proxy: {
+      "/v1": {
+        target: process.env.ARTCRAFT_DEV_API_URL ?? "http://127.0.0.1:12345",
+        changeOrigin: true,
+      },
+    },
     fs: {
       allow: [workspaceRoot],
     },

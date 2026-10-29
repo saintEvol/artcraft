@@ -1,0 +1,6 @@
+# Godot import cache and per-user editor state.
+.godot/
+*.import.uid.tmp
+
+# Addon check output (managed namespace + journal, recreated by the check)
+game_assets/game_assets_m0/

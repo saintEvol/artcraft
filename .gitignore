@@ -104,4 +104,5 @@ windows/sqlite/sqlite3.lib
 # ArtCraft Windows DLLs
 crates/desktop/src-tauri/*.dll
 windows_dlls/
-
+test_data/game_assets/samples/bad_manifest/
+test_data/game_assets/samples/tampered/

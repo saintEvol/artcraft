@@ -105,6 +105,7 @@ const PageVideoEditor = lazy(() =>
 const PageMoodboard = lazy(() =>
   import("./PageMoodboard").then((m) => ({ default: m.PageMoodboard })),
 );
+const GameAssets = lazy(() => import("./PageGameAssets/GameAssets"));
 
 interface Props {
   sceneToken?: string;
@@ -243,6 +244,12 @@ const TabBody = ({ sceneToken }: { sceneToken?: string }) => {
   // wrapping <div> scopes them so they don't stack as siblings of
   // the TopBar at the MainApp root.
   switch (activeTabId) {
+    case "GAME_ASSETS":
+      return (
+        <div>
+          <GameAssets />
+        </div>
+      );
     case "3D":
       return <PageScene sceneToken={sceneToken} />;
     case "APPS":

@@ -1,0 +1,19 @@
+[package]
+name = "game-assets-bevy-m0"
+version = "0.1.0"
+edition = "2021"
+publish = false
+description = "M0 fixture load check for the game-asset pack on the frozen Bevy version (0.20.0)"
+
+# Frozen Bevy version and feature set: default features (winit + wgpu/Metal
+# render, bevy_asset, bevy_gltf, bevy_scene, png, bevy_ui). See
+# _docs/game-assets/m0_baseline_and_compatibility.md before changing either.
+[dependencies]
+bevy = { version = "=0.20.0" }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+# This example must stay out of the desktop workspace: it pins its own
+# Bevy dependency tree and lockfile so the engine version cannot drift via
+# workspace unification.
+[workspace]

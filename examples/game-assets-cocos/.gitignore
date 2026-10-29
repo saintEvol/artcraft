@@ -1,0 +1,15 @@
+# Cocos Creator generated state (created on first open) and local settings.
+library/
+temp/
+profiles/
+settings/
+native/
+local/
+build/
+
+# Synced from integrations/cocos/game-assets by sync_fixtures.sh.
+extensions/
+
+# Synced fixture copy, the extension-managed install namespace, and reports.
+assets/game_assets/
+game_assets_reports/

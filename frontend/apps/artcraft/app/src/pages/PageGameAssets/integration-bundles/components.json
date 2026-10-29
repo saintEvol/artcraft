@@ -1,0 +1,29 @@
+[
+  {
+    "component_version": "0.5.0",
+    "engine": "godot",
+    "engine_version": "4.7.2",
+    "report_contract": "game-assets-engine-report.v1",
+    "file": "artcraft-godot-0.5.0.zip",
+    "bytes": 83881,
+    "sha256": "32949d2a9f00a1d909d4ece8e7c1d20a6a0434f5d236950f2dcb1802c34eb486"
+  },
+  {
+    "component_version": "0.3.0",
+    "engine": "bevy",
+    "engine_version": "0.20.0",
+    "report_contract": "game-assets-engine-report.v1",
+    "file": "artcraft-bevy-0.3.0.zip",
+    "bytes": 11407294,
+    "sha256": "1642723649c3e93d0114e319ad3f250a70aa88c52751cbefc6d22e643100bcc6"
+  },
+  {
+    "component_version": "0.1.0",
+    "engine": "cocos",
+    "engine_version": "3.8.8",
+    "report_contract": "game-assets-engine-report.v1",
+    "file": "artcraft-cocos-0.1.0.zip",
+    "bytes": 61359,
+    "sha256": "8d2f17c1a387062f4ff675f1c4349c2b30f78a1f6fbc6b75c5415b1b9c3daa08"
+  }
+]

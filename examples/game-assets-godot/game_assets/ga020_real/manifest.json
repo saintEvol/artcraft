@@ -1,0 +1,449 @@
+{
+ "schema_version": "1.0",
+ "pack_id": "ga020_real_pack",
+ "project_id": "ga_proj_ga020",
+ "export_id": "ga020_real",
+ "generated_at": "2026-10-24T00:00:00Z",
+ "engine_profiles": [
+  {
+   "id": "ga_profile_bevy_0_20_0",
+   "engine": "bevy",
+   "engine_version": "0.20.0",
+   "renderer_backend": "wgpu",
+   "importer_version": "game_assets_bevy_1",
+   "coordinate_conversion": "y_up_z_forward_passthrough",
+   "required_features": [],
+   "validation_status": "verified"
+  },
+  {
+   "id": "ga_profile_godot_4_7_2",
+   "engine": "godot",
+   "engine_version": "4.7.2",
+   "renderer_backend": "forward_plus",
+   "importer_version": "game_assets_addon_1",
+   "coordinate_conversion": "y_up_z_forward_passthrough",
+   "required_features": [],
+   "validation_status": "verified"
+  }
+ ],
+ "assets": [
+  {
+   "asset_id": "real_sword_icon",
+   "stable_key": "sword_icon",
+   "version_id": "real_v1_sword_icon",
+   "kind": "icon_2d",
+   "spec_hash": "832eb32f001e1e08380901876a3b3a431340e74af390114c966eb8e0a7fec502",
+   "files": [
+    {
+     "role": "main",
+     "path": "assets/icons/sword_icon/main.png",
+     "sha256": "2231c7934569b1390e6424200172f896960b93ff640547a174665b4870eeaf19",
+     "byte_length": 54051,
+     "mime": "image/png"
+    }
+   ],
+   "quality": {
+    "technical_check": {
+     "status": "passed",
+     "validator_version": "ga020_real"
+    },
+    "human_review": {
+     "status": "pending"
+    }
+   },
+   "image": {
+    "width": 512,
+    "height": 512,
+    "alpha_mode": "straight",
+    "color_space": "srgb",
+    "anchor": {
+     "x": 0.5,
+     "y": 0.5,
+     "origin": "top_left"
+    },
+    "pixels_per_world_unit": 100,
+    "sampling": "linear"
+   }
+  },
+  {
+   "asset_id": "real_arrow_icon",
+   "stable_key": "arrow_icon",
+   "version_id": "real_v1_arrow_icon",
+   "kind": "icon_2d",
+   "spec_hash": "832eb32f001e1e08380901876a3b3a431340e74af390114c966eb8e0a7fec502",
+   "files": [
+    {
+     "role": "main",
+     "path": "assets/icons/arrow_icon/main.png",
+     "sha256": "784ed4c1114e6ed04a3f99a541442813412c7e68b7947ac716db58b87547d562",
+     "byte_length": 126338,
+     "mime": "image/png"
+    }
+   ],
+   "quality": {
+    "technical_check": {
+     "status": "passed",
+     "validator_version": "ga020_real"
+    },
+    "human_review": {
+     "status": "pending"
+    }
+   },
+   "image": {
+    "width": 512,
+    "height": 512,
+    "alpha_mode": "straight",
+    "color_space": "srgb",
+    "anchor": {
+     "x": 0.5,
+     "y": 0.5,
+     "origin": "top_left"
+    },
+    "pixels_per_world_unit": 100,
+    "sampling": "linear"
+   }
+  },
+  {
+   "asset_id": "real_health_potion",
+   "stable_key": "health_potion",
+   "version_id": "real_v1_health_potion",
+   "kind": "icon_2d",
+   "spec_hash": "832eb32f001e1e08380901876a3b3a431340e74af390114c966eb8e0a7fec502",
+   "files": [
+    {
+     "role": "main",
+     "path": "assets/icons/health_potion/main.png",
+     "sha256": "d76b65e7f213e1ae8de2ded01ae5223060b1f315db7b6fbad69793fb7aee4b67",
+     "byte_length": 175079,
+     "mime": "image/png"
+    }
+   ],
+   "quality": {
+    "technical_check": {
+     "status": "passed",
+     "validator_version": "ga020_real"
+    },
+    "human_review": {
+     "status": "pending"
+    }
+   },
+   "image": {
+    "width": 512,
+    "height": 512,
+    "alpha_mode": "straight",
+    "color_space": "srgb",
+    "anchor": {
+     "x": 0.5,
+     "y": 0.5,
+     "origin": "top_left"
+    },
+    "pixels_per_world_unit": 100,
+    "sampling": "linear"
+   }
+  },
+  {
+   "asset_id": "real_iron_helmet",
+   "stable_key": "iron_helmet",
+   "version_id": "real_v1_iron_helmet",
+   "kind": "icon_2d",
+   "spec_hash": "832eb32f001e1e08380901876a3b3a431340e74af390114c966eb8e0a7fec502",
+   "files": [
+    {
+     "role": "main",
+     "path": "assets/icons/iron_helmet/main.png",
+     "sha256": "a0070c490ab81df244788e43bf392c22a8e766b00d063a313e904ba32fa2c1da",
+     "byte_length": 240384,
+     "mime": "image/png"
+    }
+   ],
+   "quality": {
+    "technical_check": {
+     "status": "passed",
+     "validator_version": "ga020_real"
+    },
+    "human_review": {
+     "status": "pending"
+    }
+   },
+   "image": {
+    "width": 512,
+    "height": 512,
+    "alpha_mode": "straight",
+    "color_space": "srgb",
+    "anchor": {
+     "x": 0.5,
+     "y": 0.5,
+     "origin": "top_left"
+    },
+    "pixels_per_world_unit": 100,
+    "sampling": "linear"
+   }
+  },
+  {
+   "asset_id": "real_silver_key",
+   "stable_key": "silver_key",
+   "version_id": "real_v1_silver_key",
+   "kind": "icon_2d",
+   "spec_hash": "832eb32f001e1e08380901876a3b3a431340e74af390114c966eb8e0a7fec502",
+   "files": [
+    {
+     "role": "main",
+     "path": "assets/icons/silver_key/main.png",
+     "sha256": "fc0f37107fe2d4267fb52d211a85d3ec36cbec0d07642efec3a7e2b7acfad316",
+     "byte_length": 143762,
+     "mime": "image/png"
+    }
+   ],
+   "quality": {
+    "technical_check": {
+     "status": "passed",
+     "validator_version": "ga020_real"
+    },
+    "human_review": {
+     "status": "pending"
+    }
+   },
+   "image": {
+    "width": 512,
+    "height": 512,
+    "alpha_mode": "straight",
+    "color_space": "srgb",
+    "anchor": {
+     "x": 0.5,
+     "y": 0.5,
+     "origin": "top_left"
+    },
+    "pixels_per_world_unit": 100,
+    "sampling": "linear"
+   }
+  },
+  {
+   "asset_id": "real_gold_coins",
+   "stable_key": "gold_coins",
+   "version_id": "real_v1_gold_coins",
+   "kind": "icon_2d",
+   "spec_hash": "832eb32f001e1e08380901876a3b3a431340e74af390114c966eb8e0a7fec502",
+   "files": [
+    {
+     "role": "main",
+     "path": "assets/icons/gold_coins/main.png",
+     "sha256": "4b9000d5714620314e7eaeb099c03e4f17bd4c387b3f075747999505db26de7b",
+     "byte_length": 311141,
+     "mime": "image/png"
+    }
+   ],
+   "quality": {
+    "technical_check": {
+     "status": "passed",
+     "validator_version": "ga020_real"
+    },
+    "human_review": {
+     "status": "pending"
+    }
+   },
+   "image": {
+    "width": 512,
+    "height": 512,
+    "alpha_mode": "straight",
+    "color_space": "srgb",
+    "anchor": {
+     "x": 0.5,
+     "y": 0.5,
+     "origin": "top_left"
+    },
+    "pixels_per_world_unit": 100,
+    "sampling": "linear"
+   }
+  },
+  {
+   "asset_id": "real_wooden_shield",
+   "stable_key": "wooden_shield",
+   "version_id": "real_v1_wooden_shield",
+   "kind": "icon_2d",
+   "spec_hash": "832eb32f001e1e08380901876a3b3a431340e74af390114c966eb8e0a7fec502",
+   "files": [
+    {
+     "role": "main",
+     "path": "assets/icons/wooden_shield/main.png",
+     "sha256": "adfbc990bf7caa785d6c1f7f8fc52fd5a9c9506f4f2170a98e3df7267be0548b",
+     "byte_length": 298608,
+     "mime": "image/png"
+    }
+   ],
+   "quality": {
+    "technical_check": {
+     "status": "passed",
+     "validator_version": "ga020_real"
+    },
+    "human_review": {
+     "status": "pending"
+    }
+   },
+   "image": {
+    "width": 512,
+    "height": 512,
+    "alpha_mode": "straight",
+    "color_space": "srgb",
+    "anchor": {
+     "x": 0.5,
+     "y": 0.5,
+     "origin": "top_left"
+    },
+    "pixels_per_world_unit": 100,
+    "sampling": "linear"
+   }
+  },
+  {
+   "asset_id": "real_knight_sprite",
+   "stable_key": "knight_sprite",
+   "version_id": "real_v1_knight_sprite",
+   "kind": "sprite_2d",
+   "spec_hash": "1cc8c2fc19d4db3c7a597ee687e2830021c26e8d0b1ec1c18df50d58f3556686",
+   "files": [
+    {
+     "role": "main",
+     "path": "assets/sprites/knight_sprite/main.png",
+     "sha256": "2836d23e04b965ff93a41935d93cd4aed581b8efbed2ae05692e579ba1cca607",
+     "byte_length": 852615,
+     "mime": "image/png"
+    }
+   ],
+   "quality": {
+    "technical_check": {
+     "status": "passed",
+     "validator_version": "ga020_real"
+    },
+    "human_review": {
+     "status": "pending"
+    }
+   },
+   "image": {
+    "width": 1024,
+    "height": 1024,
+    "alpha_mode": "straight",
+    "color_space": "srgb",
+    "anchor": {
+     "x": 0.5,
+     "y": 0.5,
+     "origin": "top_left"
+    },
+    "pixels_per_world_unit": 100,
+    "sampling": "linear"
+   }
+  },
+  {
+   "asset_id": "real_archer_sprite",
+   "stable_key": "archer_sprite",
+   "version_id": "real_v1_archer_sprite",
+   "kind": "sprite_2d",
+   "spec_hash": "1cc8c2fc19d4db3c7a597ee687e2830021c26e8d0b1ec1c18df50d58f3556686",
+   "files": [
+    {
+     "role": "main",
+     "path": "assets/sprites/archer_sprite/main.png",
+     "sha256": "a8d54bb193360da6ea0926b3f12bb15a1da55dc42b6f093a2afecd494ff04905",
+     "byte_length": 575077,
+     "mime": "image/png"
+    }
+   ],
+   "quality": {
+    "technical_check": {
+     "status": "passed",
+     "validator_version": "ga020_real"
+    },
+    "human_review": {
+     "status": "pending"
+    }
+   },
+   "image": {
+    "width": 1024,
+    "height": 1024,
+    "alpha_mode": "straight",
+    "color_space": "srgb",
+    "anchor": {
+     "x": 0.5,
+     "y": 0.5,
+     "origin": "top_left"
+    },
+    "pixels_per_world_unit": 100,
+    "sampling": "linear"
+   }
+  },
+  {
+   "asset_id": "real_spooky_tree",
+   "stable_key": "spooky_tree",
+   "version_id": "real_v1_spooky_tree",
+   "kind": "sprite_2d",
+   "spec_hash": "1cc8c2fc19d4db3c7a597ee687e2830021c26e8d0b1ec1c18df50d58f3556686",
+   "files": [
+    {
+     "role": "main",
+     "path": "assets/sprites/spooky_tree/main.png",
+     "sha256": "1b0da4f9facd4f54b321991833d194e50e45c19dc4b078e812c9c86e2be114ab",
+     "byte_length": 803654,
+     "mime": "image/png"
+    }
+   ],
+   "quality": {
+    "technical_check": {
+     "status": "passed",
+     "validator_version": "ga020_real"
+    },
+    "human_review": {
+     "status": "pending"
+    }
+   },
+   "image": {
+    "width": 1024,
+    "height": 1024,
+    "alpha_mode": "straight",
+    "color_space": "srgb",
+    "anchor": {
+     "x": 0.5,
+     "y": 0.5,
+     "origin": "top_left"
+    },
+    "pixels_per_world_unit": 100,
+    "sampling": "linear"
+   }
+  },
+  {
+   "asset_id": "real_ice_crystal",
+   "stable_key": "ice_crystal",
+   "version_id": "real_v1_ice_crystal",
+   "kind": "icon_2d",
+   "spec_hash": "832eb32f001e1e08380901876a3b3a431340e74af390114c966eb8e0a7fec502",
+   "files": [
+    {
+     "role": "main",
+     "path": "assets/icons/ice_crystal/main.png",
+     "sha256": "73d72003064765486d83d502df65e3fb06599db1f02aa9febcb034f339a3fe84",
+     "byte_length": 314760,
+     "mime": "image/png"
+    }
+   ],
+   "image": {
+    "width": 512,
+    "height": 512,
+    "alpha_mode": "straight",
+    "color_space": "srgb",
+    "anchor": {
+     "x": 0.5,
+     "y": 0.5,
+     "origin": "top_left"
+    },
+    "pixels_per_world_unit": 100,
+    "sampling": "linear"
+   },
+   "quality": {
+    "technical_check": {
+     "status": "passed",
+     "validator_version": "ga020_real"
+    },
+    "human_review": {
+     "status": "pending"
+    }
+   }
+  }
+ ]
+}

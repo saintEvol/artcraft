@@ -8,6 +8,7 @@ export type TabId =
   | "IMAGE"
   | "AUDIO"
   | "APPS"
+  | "GAME_ASSETS"
   | "VIDEO_FRAME_EXTRACTOR"
   | "VIDEO_WATERMARK_REMOVAL"
   | "IMAGE_WATERMARK_REMOVAL"

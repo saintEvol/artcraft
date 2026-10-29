@@ -1,0 +1,127 @@
+{
+  "schema_version": "1.0",
+  "pack_id": "pack_m0_minimal_v1",
+  "project_id": "game_assets_m0",
+  "export_id": "export_m0_minimal_v1",
+  "generated_at": "2026-10-22T00:00:00Z",
+  "provenance": {
+    "license": "CC0-1.0 (procedurally generated fixture data)",
+    "source_note": "procedurally generated; no third-party or user material",
+    "provenance_ref": "provenance.json"
+  },
+  "engine_profiles": [
+    {
+      "id": "godot_4_7_2_forward_plus_m0",
+      "engine": "godot",
+      "engine_version": "4.7.2-stable",
+      "renderer_backend": "forward_plus",
+      "importer_version": "game_assets_addon/m0",
+      "coordinate_conversion": "none; glTF native +Y up / model forward +Z imported as-is",
+      "required_features": [],
+      "validation_status": "unverified"
+    },
+    {
+      "id": "bevy_0_20_0_wgpu_m0",
+      "engine": "bevy",
+      "engine_version": "0.20.0",
+      "renderer_backend": "wgpu (Metal on macOS)",
+      "importer_version": "game_assets_bevy/m0",
+      "coordinate_conversion": "none; glTF native +Y up, model forward +Z kept on the spawned entity",
+      "required_features": [],
+      "validation_status": "unverified"
+    }
+  ],
+  "assets": [
+    {
+      "asset_id": "asset_health_potion_m0",
+      "stable_key": "health_potion",
+      "version_id": "version_health_potion_1",
+      "kind": "icon_2d",
+      "spec_hash": "3bcea443705c48f480ad43708f8b4a39723d3abc88ec3747f632a8bafe5f67ce",
+      "files": [
+        {
+          "role": "main",
+          "path": "assets/icons/health_potion/main.png",
+          "sha256": "99fe4030ef695fd1fe3b2b4eacee9c6d822ff5a5ebd23df8b32fb9da6cd73645",
+          "byte_length": 2724,
+          "mime": "image/png"
+        }
+      ],
+      "image": {
+        "width": 512,
+        "height": 512,
+        "alpha_mode": "straight",
+        "color_space": "srgb",
+        "anchor": {
+          "x": 0.5,
+          "y": 0.5,
+          "origin": "top_left"
+        },
+        "pixels_per_world_unit": 100,
+        "sampling": "linear"
+      },
+      "quality": {
+        "technical_check": {
+          "status": "passed",
+          "validator_version": "m0-contract-checker/1"
+        },
+        "human_review": {
+          "status": "pending"
+        }
+      }
+    },
+    {
+      "asset_id": "asset_wooden_crate_m0",
+      "stable_key": "wooden_crate",
+      "version_id": "version_wooden_crate_1",
+      "kind": "prop_3d",
+      "spec_hash": "3814e7d0b2f2f31ed0d653751d800a11f2f106c2f858dc901e331f35598516c7",
+      "files": [
+        {
+          "role": "main",
+          "path": "assets/props/wooden_crate/main.glb",
+          "sha256": "44229d211faf5226ed41e9933912bbd151ae7bacac185f0b8e4e826539465697",
+          "byte_length": 1596,
+          "mime": "model/gltf-binary"
+        }
+      ],
+      "mesh": {
+        "scene_index": 0,
+        "unit": "meter",
+        "up_axis": "+Y",
+        "visual_forward": "+Z",
+        "origin": "bottom_center",
+        "measured_dimensions_m": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "triangles": 12,
+        "material_workflow": "gltf_metallic_roughness",
+        "collision": {
+          "kind": "box",
+          "center": [
+            0.0,
+            0.5,
+            0.0
+          ],
+          "half_extents": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "unit": "meter"
+        }
+      },
+      "quality": {
+        "technical_check": {
+          "status": "passed",
+          "validator_version": "m0-contract-checker/1"
+        },
+        "human_review": {
+          "status": "pending"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "generator": "script/artcraft/game-assets/generate_m0_fixtures.py",
+  "generator_version": "1",
+  "inputs": "procedurally generated; no third-party or user-supplied material",
+  "license": "SPDX-License-Identifier: MIT OR Apache-2.0; generated fixture data dedicated to the public domain (CC0-1.0) for reuse in tests",
+  "generated_at": "2026-10-22T00:00:00Z"
+}

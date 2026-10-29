@@ -1,4 +1,4 @@
-import { BoxIcon, CrosshairIcon, DropletIcon, FilmIcon, GlobeIcon, GroupIcon, ImageIcon, ImagesIcon, MusicIcon, PenToolIcon, PencilIcon, SparklesIcon, WandSparklesIcon } from "lucide-react";
+import { Blocks, BoxIcon, CrosshairIcon, DropletIcon, FilmIcon, GlobeIcon, GroupIcon, ImageIcon, ImagesIcon, MusicIcon, PenToolIcon, PencilIcon, SparklesIcon, WandSparklesIcon } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { useMemo } from "react";
 import {
@@ -14,6 +14,7 @@ export type AppId =
   | "EDIT"
   | "2D"
   | "3D"
+  | "GAME_ASSETS"
   | "VIDEO_FRAME_EXTRACTOR"
   | "VIDEO_WATERMARK_REMOVAL"
   | "IMAGE_WATERMARK_REMOVAL"
@@ -188,6 +189,12 @@ const APP_CARD_PALETTES: Record<string, AppCardPalette> = {
     iconColor: "text-fuchsia-300",
     hoverStyle: "hover:border-fuchsia-400/60 hover:bg-fuchsia-500/10",
   },
+  "game-assets": {
+    accent: "from-teal-500/20 to-teal-500/0",
+    iconBg: "bg-teal-500/20 border-teal-400/40",
+    iconColor: "text-teal-300",
+    hoverStyle: "hover:border-teal-400/60 hover:bg-teal-500/10",
+  },
   "video-watermark-removal": {
     accent: "from-yellow-500/20 to-yellow-500/0",
     iconBg: "bg-yellow-500/20 border-yellow-400/40",
@@ -213,6 +220,16 @@ export const getAppCardPalette = (id: string): AppCardPalette =>
   APP_CARD_PALETTES[id] ?? FALLBACK_APP_CARD_PALETTE;
 
 export const ALL_APPS: FullAppItem[] = [
+  {
+    id: "game-assets",
+    label: "Game Assets",
+    description: "为同一个游戏项目生产 2D/3D 资产并导出到 Godot 与 Bevy",
+    icon: Blocks,
+    category: "generate",
+    action: "GAME_ASSETS",
+    badge: "BETA",
+    color: "bg-teal-500/40",
+  },
   {
     id: "text-to-image",
     label: "Create Image",
@@ -433,6 +450,7 @@ export const goToApp = (action?: string) => {
       "AUDIO",
       "2D",
       "3D",
+      "GAME_ASSETS",
       "VIDEO_FRAME_EXTRACTOR",
       "VIDEO_WATERMARK_REMOVAL",
       "IMAGE_WATERMARK_REMOVAL",

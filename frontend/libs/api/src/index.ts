@@ -1,3 +1,4 @@
+export * from "./lib/GameAssetsApi.js";
 export * from "./lib/enums/index.js";
 export * from "./lib/enums/Job.js";
 export * from "./lib/models/Users.js";

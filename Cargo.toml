@@ -43,6 +43,9 @@ members = [
   "crates/testing/test_utils",
   "crates/vendor/tauri-plugin-http",
 ]
+# Engine-integration examples pin their own dependency trees (frozen Bevy
+# version, own lockfile) and must not join the desktop workspace.
+exclude = ["examples/game-assets-bevy", "integrations/bevy/game_assets_bevy"]
 default-members = ["crates/desktop/artcraft"]
 
 [workspace.package]

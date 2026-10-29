@@ -1,0 +1,55 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="PackedScene" path="res://game_assets/pack_minimal/assets/props/wooden_crate/main.glb" id="1_crate"]
+[ext_resource type="PackedScene" path="res://game_assets/samples_3d/arrow_front_z.glb" id="2_arrow"]
+[ext_resource type="Texture2D" path="res://game_assets/pack_minimal/assets/icons/health_potion/main.png" id="3_icon"]
+
+[sub_resource type="StandardMaterial3D" id="Material_floor"]
+albedo_color = Color(0.16, 0.17, 0.2, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_floor"]
+size = Vector2(12, 12)
+
+[sub_resource type="StandardMaterial3D" id="Material_reference"]
+transparency = 1
+albedo_color = Color(0.8, 0.8, 0.85, 0.4)
+
+[sub_resource type="BoxMesh" id="BoxMesh_reference"]
+size = Vector3(1, 1, 1)
+
+[sub_resource type="Environment" id="Environment_m0"]
+ambient_light_source = 2
+ambient_light_color = Color(0.5, 0.5, 0.55, 1)
+ambient_light_energy = 1.2
+
+[node name="M0VisualCheck" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_m0")
+
+[node name="Sun" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.866, 0.25, -0.433, 0, 0.866, 0.5, 0.5, -0.433, 0.75, 0, 4, 0)
+shadow_enabled = true
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.8, 0.6, 0, -0.6, 0.8, 3.5, 2.2, 4.5)
+current = true
+
+[node name="Floor" type="MeshInstance3D" parent="."]
+material_override = SubResource("Material_floor")
+mesh = SubResource("PlaneMesh_floor")
+
+[node name="CrateFromPack" parent="." instance=ExtResource("1_crate")]
+
+[node name="ArrowOrientationProbe" parent="." instance=ExtResource("2_arrow")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, 0)
+
+[node name="ReferenceBox1m" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0.5, 0)
+material_override = SubResource("Material_reference")
+mesh = SubResource("BoxMesh_reference")
+
+[node name="IconOverlay" type="Sprite2D" parent="."]
+position = Vector2(160, 160)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("3_icon")

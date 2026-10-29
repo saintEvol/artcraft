@@ -1,0 +1,17 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "composite": false,
+    "incremental": false,
+    "declaration": false,
+    "declarationMap": false,
+    "emitDeclarationOnly": false,
+    "baseUrl": "../..",
+    "paths": {
+      "@storyteller/api": ["libs/api/src/lib/GameAssetsApi.ts"],
+      "@storyteller/tauri-utils": ["libs/tauri-utils/src/lib/FetchProxy.ts"]
+    }
+  },
+  "include": ["app/src/pages/PageGameAssets/**/*.ts", "app/src/pages/PageGameAssets/**/*.tsx"],
+  "references": []
+}
